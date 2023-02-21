@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prints the main alphabet of the code
+ * print_alphabet - the main alphabet of the for _putchar
  * Return: void in this code
  */
 
