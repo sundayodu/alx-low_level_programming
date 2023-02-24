@@ -1,4 +1,4 @@
-#include "main.h"
+`include "main.h"
 
 /**
  * print_numbers - print 0-9
@@ -7,12 +7,18 @@
 
 void print_numbers(void)
 {
-	char c;
+	int x = 0;
 
-	for(c = '0'; c <= '9'; c++)
+	for (; x <= 9; x++)
 	{
-		_putchar(c);
+	if (x == 2 || x == 4)
+	{
+	continue
+	}
+	else
+	{
+	_putchar(x + '0');
+	}
 	}
 	_putchar('\n');
 }
-
