@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
   * print_array - function for printimg array
   * @n: input array
