@@ -1,13 +1,14 @@
 #include "main.h"
 /**
   * puts_half - function to print half the number
-  * @n: The length of the string
   * @str: input string
   * Return: The other half input
   */
 void puts_half(char *str)
 {
-	int a, n, longi;
+	int a;
+	int n;
+	int longi;
 
 	longi = 0;
 
