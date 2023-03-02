@@ -1,21 +1,22 @@
 #include "main.h"
-
 /**
-  * string_toupper - The main function
-  *
-  *@n: Function parameter
-  *
-  * Return: Always 0
-  */
+ * string_toupper - main function
+ *
+ * @n: String input
+ *
+ * Return: dest
+ */
+
 char *string_toupper(char *n)
 {
-	int k = 0;
+	int i;
 
-	while (n[k] != '\0')
+	i = 0;
+	while (n[i] != '\0')
 	{
-	if (n[k] > 'a' && n[k] <= 'z')
-	n[k] = n[k] - 32;
-	k++;
+	if (n[i] >= 'a' && n[i] <= 'z')
+	n[i] = n[i] - 32;
+	i++;
 	}
-	return (n);
+return (n);
 }
