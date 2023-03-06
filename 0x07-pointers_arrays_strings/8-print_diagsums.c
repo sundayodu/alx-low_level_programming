@@ -4,20 +4,29 @@
 /**
   * print_diagsums - main function
   *
-  * @a: Function parameter
+  * @size: function parameter
   *
-  * @size: Function paraameter
+  * @a: function parameter
   *
   * Return: Always 0.
   */
+
 void print_diagsums(int *a, int size)
 {
-	int k, j, sum1 = 0, sum2 = 0;
+	int count1;
+	int count2;
+	int x;
 
-	for (k = 0; k <= (size * size) - size; j = j + size - 1)
-	sum1 = sum1 + a[k];
+	count1 = 0;
+	count2 = 0;
 
-	for (j = size - 1; j <= (size * size) - size; j = j + size - 1)
-	sum2 = sum2 + a[j];
-	printf("%d, %d\n", sum1, sum2);
+	for (x = 0; x < size; x++)
+	{
+	count1 = count1 + a[x * size + x];
+	}
+	for (x = size - 1; x >= 0; x--)
+	{
+	count2 += a[x * size + (size - x - 1)];
+	}
+	printf("%d, %d\n", count1, count2);
 }
