@@ -3,9 +3,9 @@
 /**
 * create_file - function to create a file
 * @filename: the fule name to be printed by the program
-* @txt_content: string pointer to write
+* @text_content: string pointer to write
 *
-* Return: Fub=nction will return -1 if it fails
+* Return: Function will return -1 if it fails
 */
 
 int create_file(const char *filename, char *text_content)
